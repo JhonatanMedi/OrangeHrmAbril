@@ -1,5 +1,6 @@
 package Orange.Definitions;
 
+import Orange.Pages.LeavePage;
 import Orange.Pages.LoginPage;
 import Orange.Pages.PimPage;
 import Orange.Steps.Conexion;
@@ -19,6 +20,8 @@ public class DefinitionsSteps {
     private Conexion conexion = new Conexion();
     private LoginPage loginPage = new LoginPage(driver);
     private PimPage pimPage = new PimPage(driver);
+
+    private LeavePage leavePage = new LeavePage(driver);
 
 
     @Given("^abrir el navegador$")
@@ -51,5 +54,11 @@ public class DefinitionsSteps {
     public void fillOutAddEmployee(String firstName,String middleName, String lastName){
         this.pimPage = new PimPage(driver);
         this.pimPage.fillOutAddEmployee(firstName, middleName, lastName);
+    }
+
+    @When("^the user search leave type (.*)$")
+    public void searchLeave(String typeLeave){
+        this.leavePage = new LeavePage(driver);
+        this.leavePage.searchLeave(typeLeave);
     }
 }

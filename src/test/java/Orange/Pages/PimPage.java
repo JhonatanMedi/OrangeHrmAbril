@@ -47,7 +47,7 @@ public class PimPage {
        // this.questions.screenShot();
         this.btnSave.isEnabled();
         this.btnSave.sendKeys(Keys.ENTER);
-        this.insertDataBase.insertEmployee(firstName,middleName ,lastName);
+       // this.insertDataBase.insertEmployee(firstName,middleName ,lastName);
 
     }
 }

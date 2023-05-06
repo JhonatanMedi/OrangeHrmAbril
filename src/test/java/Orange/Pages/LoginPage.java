@@ -38,7 +38,7 @@ public class LoginPage {
         this.txtUser.sendKeys(userName);
         this.txtPass.sendKeys(password);
         this.buttonPages.btnLogin();
-        this.consultDataBase.consultUsers();
+       // this.consultDataBase.consultUsers();
     }
 
     public void validateDashboard() {

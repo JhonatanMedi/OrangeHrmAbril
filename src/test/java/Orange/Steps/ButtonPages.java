@@ -17,6 +17,9 @@ public class ButtonPages {
     @FindBy(how = How.XPATH, using = "//div[@class = 'orangehrm-header-container']//button[@type= 'button']")
     private WebElement btnAddEmployee;
 
+    @FindBy(how = How.XPATH, using = "//ul//li//a//span[text()='Leave']")
+    private WebElement btnLeave;
+
 
    public  ButtonPages (WebDriver driver){
        PageFactory.initElements(driver, this);
@@ -37,4 +40,8 @@ public class ButtonPages {
        this.btnAddEmployee.click();
    }
 
+   public void btnLeave(){
+       this.btnLeave.isEnabled();
+       this.btnLeave.click();
+   }
 }
