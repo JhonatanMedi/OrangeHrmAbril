@@ -4,14 +4,11 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.io.File;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.TakesScreenshot;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-
 import com.ibm.icu.text.SimpleDateFormat;
-
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
@@ -61,7 +58,7 @@ public class Questions {
     }
 
     @Step
-    public void textoCrearCuentaAssert() {
+    public void prueba() {
 
         Assert.assertEquals("Crea una contraseña", "Crea una contraseña");
     }
