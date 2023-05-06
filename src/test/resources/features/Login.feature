@@ -14,4 +14,4 @@ Feature: Registro en la pagina Booking
 
       | userName | password |
       | Admin    | admin123 |
-      | jhonatan | 545343   |
+    #  | jhonatan | 545343   |
